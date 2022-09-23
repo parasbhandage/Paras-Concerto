@@ -1,0 +1,13 @@
+<div *ngFor="let todo of list"  class="row">
+
+    <div class="col-md-10">
+        <input type="checkbox" id="checkbox{{todo.id}}" [checked]="isDisabled"  />
+        <label for="{{todo.lname}}" style="margin-left: 20px;">{{todo.lname}}</label>
+
+    </div>
+    <div class="col-md-2">
+
+        <input type="button" value="Remove" id="button{{todo.id}}" class="btn btn-outline-secondary" (click)="delete(todo)" />
+        <ng-content></ng-content>
+    </div>
+</div>

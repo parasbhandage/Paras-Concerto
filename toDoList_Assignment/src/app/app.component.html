@@ -1,0 +1,41 @@
+<div class="container-fluid bg-light">
+  <div class="container bg-light">
+
+    <div class="row mt-4" style="height: 500px;">
+      <div class="col"></div>
+      <div class="col-md-6 bg-white shadow">
+
+        <div class="card bg-warning mt-4">
+          <h4 class="text-white p-3 pt-2 pb-2">To Do App</h4>
+        </div>
+
+        <div class="shadow">
+          <div class="input-group p-4">
+            <form #listform="ngForm">
+
+              <input type="text" class="form-control" placeholder="What needs to be done?" #lname="ngModel" ngModel
+                name="lname" (keydown.enter)="push(listform.value)" />
+            </form>
+          </div>
+        </div>
+
+        <h4 class="text-primary mt-4">To Do Tasks : </h4>
+
+        <div style="overflow-y: auto; height: 350px;">
+          <div class="p-2 shadow border" id="tasks">
+            <div class="input-group row ps-3">
+              <app-list [list]="lists"></app-list>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h6>{{lists.length}} Items left</h6>
+        </div>
+      </div>
+      <div class="col"></div>
+
+    </div>
+
+  </div>
+</div>

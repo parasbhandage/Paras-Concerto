@@ -1,0 +1,27 @@
+.input{
+    margin-left: 20px;
+}
+
+
+.btn{
+    /* width: 20px;
+    height: 20px; */
+    line-height: 1;
+    font-size: 10px;
+}
+
+
+
+.bg-warning {
+    /* background-color:#DEDAAD!important; */
+    background-color:#414016!important;
+}
+
+.text-primary{
+    color:#6E7A31!important;
+}
+
+.text-white{
+    color:#DEDAAD!important;
+    /* color: #414016!important;; */
+}
